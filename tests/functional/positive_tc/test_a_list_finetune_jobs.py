@@ -1,4 +1,6 @@
 import requests
+# Disable SSL verification (not recommended for production)
+requests.packages.urllib3.disable_warnings()
 
 def test_list_finetune_jobs():
     url = "https://studio.tune.app/tune.Studio/ListFinetuneJobs"
@@ -13,5 +15,6 @@ def test_list_finetune_jobs():
         "Content-Type": "application/json"
     }
     response = requests.post(url, json=payload, headers=headers)
-    print("Status Code:", response.status_code)
-    print("Response Text:", response.text)
+    assert response.status_code == 200
+    # print("Status Code:", response.status_code)
+    # print("Response Text:", response.text)

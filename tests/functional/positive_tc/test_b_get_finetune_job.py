@@ -1,6 +1,6 @@
 import requests
 
-def test_delete_finetune_jobs():
+def test_get_finetune_jobs():
     url = "https://studio.tune.app/tune.Studio/ListFinetuneJobs"
     payload = {
         "auth": {
@@ -18,26 +18,21 @@ def test_delete_finetune_jobs():
 
         # Extract the "id" value
         job_id = None
-        job_name = None
         jobs = data.get('jobs', [])
         if jobs:
             job_id = jobs[0].get('id')
-            job_name = jobs[0].get('name')
-    else:
-        print("\n Failed to list Finetune jobs")
 
-    url = "https://studio.tune.app/tune.Studio/DeleteFinetuneJob"
+    url = "https://studio.tune.app/tune.Studio/GetFinetuneJob"
     payload = {
         "auth": {
             "organization": "a0a72721-4bd2-4039-a42e-aa6be9565fee",
+            # "cluster": "<string>"
         },
         "id": job_id
     }
     response = requests.request("POST", url, json=payload, headers=headers)
+    assert response.status_code == 200
     if response.status_code == 200:
-        print("\n Successfully Deleted finetunejob - ", job_name)
-    else:
-        print("\n Failed to Delete finetunejob - ", job_name)
-
-
-
+        data = response.json()
+        job_name = data["name"]
+        print("\n Get finetune job Successful: Job Name -", job_name)

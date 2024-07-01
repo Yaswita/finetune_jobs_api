@@ -1,0 +1,1 @@
+locust -f performance_test.py --host=https://studio.tune.app

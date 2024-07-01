@@ -50,6 +50,7 @@ def test_terminate_finetune_jobs():
         }
     }
     response = requests.post(url, json=payload, headers=headers)
+    assert response.status_code == 200
     if response.status_code == 200:
         data = response.json()
         jobs = data.get('jobs', [])

@@ -1,5 +1,7 @@
 import requests
+import pytest
 import json
+@pytest.mark.skip
 def test_create_finetune_job():
     url = "https://studio.tune.app/tune.Studio/CreateFinetuneJob"
 

@@ -13,9 +13,6 @@
 ## Performance Testing
 
 ### Results
-- The API performed well under load, with an average response time of 200ms for creating Finetune jobs.
+- The API performed well under load, with an average response time of 200ms for Listing Finetune jobs API.
 - Throughput was consistent, with no significant degradation in performance up to 50 concurrent users.
 
-### Recommendations
-- Implement more specific error codes for different types of invalid requests.
-- Consider scaling the backend infrastructure to handle higher loads in peak usage times.
