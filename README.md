@@ -1,7 +1,7 @@
 # finetune_jobs_api
 
 ## Setup Instructions
-(note: Create the finetune job using UI before running he scripts - https://studio.tune.app/finetuning)
+(note: Create the finetune job using UI before running the scripts - https://studio.tune.app/finetuning)
 
 ### Run Functinal Tests 
 - Contains both positive and negative test cases
