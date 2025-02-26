@@ -8,7 +8,7 @@
 1. Run run_test.bat - it runs the scripts and generates a log report in local
 2. Navigate to location (C:\Users\YASWITA\finetune_jobs_api) to open the report 
 
-Sample Report = https://github.com/Yaswita/finetune_jobs_api/blob/main/finetune_report.html, do "Save as.." and open to see the web page
+Sample Report = https://github.com/Yaswita/finetune_jobs_api/blob/main/finetune_report.html, download raw file and open it 
 
 ### Run Performance Tests
 - Contains performance test case using locusts
