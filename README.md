@@ -9,7 +9,7 @@
 2. Navigate to location (C:\Users\YASWITA\finetune_jobs_api) to open the report 
 
 Sample Report = https://github.com/Yaswita/finetune_jobs_api/blob/main/finetune_report.html, download raw file and open it 
-              = https://docs.google.com/document/d/1waiR8_y2ICD9wXvDI5bW5BEHtbFrhJ5qiSqnbhx6T6U/edit?usp=sharing
+              https://docs.google.com/document/d/1waiR8_y2ICD9wXvDI5bW5BEHtbFrhJ5qiSqnbhx6T6U/edit?usp=sharing
 
 ### Run Performance Tests
 - Contains performance test case using locusts
